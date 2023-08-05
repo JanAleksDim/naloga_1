@@ -4,8 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naloga 1</title>
+    <style>
+        body {
+            margin: 0; /*I set the margin to 0 so that the body would reach all the way to the border*/
+        } 
+
+        header, footer { /*this section targets both the header and footer*/
+            background-color: firebrick; /*I set the background color*/
+            color: white; /*I set the color of all child elements to white*/
+            padding: 20px; /*I set the padding to 20px so it would move the text slightly away from the border*/
+        }
+        
+        header {
+            display: flex; /*I lined up the menu and the logo*/
+            justify-content: space-between; /*I moved the menu the furthest possible position right*/
+        }
+
+        main {
+            padding: 20px; /*same as previous*/
+            max-width: 800px; /*I limited the max width so that the text would look more uniform*/
+            margin: 0 auto; /*I made the margin 0 auto so it would place the text in the middle*/
+        }
+
+        img {
+            display: inline-block; /*I placed a random AI generated image*/
+            max-width: 100%; /*I limited the width of the image so that it would scale in proportion to the size of the page*/
+        }
+
+        .menu {
+            margin: 0; /*I set it to 0 so that it removes the default margin*/
+            list-style: none; /*I set the style to "none" so that it removes bullet points*/
+            display: flex; /*I set the display to flex so the home buttons would be presented in a horizontal line*/
+            gap: 10px;
+        }
+
+        .menu a {
+            color: white; /*Set the color of all links inside Menu to white*/
+            text-decoration: none; /*Removed the underline from the links in the menu*/
+        }
+        
+        /* footer {
+            background-color: firebrick;
+            color: white;
+            padding: 20px;
+        } */
+
+    </style>
 </head>
 <body>
+    <!-- HEADER -->
+    <header>
+        <div class="logo">LOGO</div>
+        <!-- MENU -->
+        <nav>
+            <ul class="menu"> <!-- I used ul because I read it was good practice. -->
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Products</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <p>
+            Lorem ipsum dolor sit amet, <a href="#">consectetur adipiscing elit</a>. Fusce vel nunc ut nulla venenatis condimentum. Sed nec velit eu velit ullamcorper tincidunt vel vel massa. Aenean interdum justo eu massa malesuada, at sagittis risus facilisis. Phasellus faucibus enim in bibendum tristique.
+        </p>
+        <p>
+            Nunc eget nisi nec lorem suscipit blandit. Integer sodales, nisi ac mattis pulvinar, velit lorem elementum eros, et ultrices elit erat sit amet purus. Vivamus ut purus urna. Nulla facilisi. Sed eu ante eget tellus pharetra rhoncus.
+        </p>
+        <p>
+            Vestibulum consectetur mi et magna ullamcorper, eu ullamcorper erat malesuada. Integer eget volutpat odio. Mauris vel eleifend orci. Duis dignissim, ex ac tristique rhoncus, neque ipsum congue quam, eget egestas ipsum enim nec ex. Phasellus pharetra libero vitae vestibulum dictum.
+        </p>
+        <p>
+            Sed laoreet dui ac nisi euismod, id posuere ligula feugiat. Sed consectetur interdum nisl, id rutrum elit feugiat eu. In hac habitasse platea dictumst. Suspendisse potenti. Fusce vitae finibus elit. Curabitur scelerisque eros eu odio congue varius. Proin eu tellus lorem.
+        </p>
+        <p>
+            Nullam lobortis tortor vel fermentum elementum. Etiam consequat, ligula quis faucibus volutpat, mauris arcu tristique elit, in pulvinar felis massa eu quam. Vivamus nec lacinia ex. Sed nec velit vel sapien cursus dapibus. Duis eu dignissim velit, id rutrum felis. Proin suscipit dolor a quam varius, nec pellentesque erat fermentum.
+        </p>
+        <p>
+            Cras nec tortor at justo facilisis rhoncus. Maecenas laoreet bibendum dolor, ac rhoncus libero sollicitudin in. Phasellus at nunc vel tortor sodales sollicitudin. Pellentesque venenatis consectetur est, vel facilisis metus accumsan eu. Vivamus varius ex non libero facilisis, sit amet vestibulum mi dictum.
+        </p>
+        <img src="castle.png" alt="an image of a castle">
+    </main>
     
+    <!-- FOOTER -->
+    <footer>
+        <p>this is a footer</p>
+    </footer>
+    
+
+
 </body>
 </html>
